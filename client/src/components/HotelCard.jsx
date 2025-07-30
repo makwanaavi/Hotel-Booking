@@ -8,7 +8,7 @@ const HotelCard = ({ room, index }) => {
       to={"/rooms/" + room._id}
       key={room._id}
       onClick={() => scrollTo(0, 0)}
-        className="relative max-w-72 w-full rounded-xl overflow-hidden bg-white text-gray-500/90 shadow-[0px_4px_4px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_8px_rgba(0,0,0,0.25)] transition-all duration-300"
+        className="relative max-w-96 w-full rounded-xl overflow-hidden bg-white text-gray-500/90 shadow-[0px_4px_4px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_8px_rgba(0,0,0,0.25)] transition-all duration-300"
 
     >
       <img
