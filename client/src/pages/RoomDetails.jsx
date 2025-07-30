@@ -24,7 +24,9 @@ const RoomDetails = () => {
         <div className="flex flex-col md:flex-row md:items-center items-start gap-2">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-playfair">
             {room.hotel.name}{" "}
-            <span className="font-inter text-xs sm:text-sm">({room.roomType})</span>
+            <span className="font-inter text-xs sm:text-sm">
+              ({room.roomType})
+            </span>
           </h1>
           <p className="text-xs font-inter py-1.5 px-3 text-white bg-orange-500 rounded-full">
             20% OFF
@@ -37,7 +39,11 @@ const RoomDetails = () => {
         </div>
 
         <div className="flex items-center gap-1 text-gray-500 mt-2 text-xs sm:text-base flex-wrap">
-          <img src={assets.locationIcon} alt="locationIcon" className="w-4 h-4 sm:w-5 sm:h-5" />
+          <img
+            src={assets.locationIcon}
+            alt="locationIcon"
+            className="w-4 h-4 sm:w-5 sm:h-5"
+          />
           <span>{room.hotel.address}</span>
         </div>
 
@@ -88,7 +94,9 @@ const RoomDetails = () => {
               ))}
             </div>
           </div>
-          <p className="text-xl sm:text-2xl font-medium mt-2 md:mt-0">${room.pricePerNight} /night</p>
+          <p className="text-xl sm:text-2xl font-medium mt-2 md:mt-0">
+            ${room.pricePerNight} /night
+          </p>
         </div>
 
         <form
@@ -148,11 +156,17 @@ const RoomDetails = () => {
         <div className="mt-16 sm:mt-24 space-y-4">
           {roomCommonData.map((spec, index) => (
             <div key={index} className="flex gap-2 items-start">
-              <img src={spec.icon} alt={`${spec.item}`} className="w-5 sm:w-6" />
+              <img
+                src={spec.icon}
+                alt={`${spec.item}`}
+                className="w-5 sm:w-6"
+              />
 
               <div>
                 <p className="text-sm sm:text-base">{spec.title}</p>
-                <p className="text-gray-500 text-xs sm:text-base">{spec.description}</p>
+                <p className="text-gray-500 text-xs sm:text-base">
+                  {spec.description}
+                </p>
               </div>
             </div>
           ))}
@@ -178,7 +192,9 @@ const RoomDetails = () => {
               className="h-12 w-12 sm:h-14 sm:w-14 md:h-18 md:w-18 rounded-full"
             />
             <div>
-              <p className="text-base sm:text-lg md:text-xl">Hosted By {room.hotel.name}</p>
+              <p className="text-base sm:text-lg md:text-xl">
+                Hosted By {room.hotel.name}
+              </p>
               <div className="flex items-center mt-1">
                 <StarRating />
                 <p className="ml-2 text-xs sm:text-base">200+ reviews</p>
